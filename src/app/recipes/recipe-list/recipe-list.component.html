@@ -47,6 +47,9 @@
                 style="max-height: 50px;">
             </span>
         </a> -->
-        <app-recipe-item *ngFor="let recipeEl of recipes" [recipe]="recipeEl" (recipeSelected)="onRecipeSelected(recipeEl)"></app-recipe-item>
+        <app-recipe-item *ngFor="let recipeEl of recipes" [recipe]="recipeEl"></app-recipe-item>
     </div>
 </div>
+
+<!-- no need to listen to this event here since it is not being done in the main class -->
+<!-- <app-recipe-item *ngFor="let recipeEl of recipes" [recipe]="recipeEl" ..//.(place of interest).//(recipeSelected)="onRecipeSelected(recipeEl)"></app-recipe-item> -->
